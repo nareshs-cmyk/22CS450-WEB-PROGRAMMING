@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Commands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page">
+
+    <div class="container">
+        <header>
+            <h1 id="main-heading">HTML - HYPERTEXT MARKUP LANGUAGE</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section id="intro">
+            <p id="description">
+                HTML, or <b>HyperText Markup Language</b>, is the standard, foundational language used to create and structure web pages.
+                It acts as the skeleton for all websites, using a system of tags and elements to define content. It is a markup language that determines how content is organized on a page.
+            </p>
+        </section>
+
+        <div class="image-wrapper">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPim9fWU4lLLwwIBaB7VsQQ_Fk3Ka7uxWHmA&s"
+                alt="HTML Image"
+                id="html-image"
+            >
+        </div>
+
+        <section class="table-section">
+            <h2>Core HTML Tags</h2>
+            <table id="tag-table">
+                <thead>
+                    <tr>
+                        <th>TAG</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>&lt;head&gt;</td><td>Contains meta information about the document.</td></tr>
+                    <tr><td>&lt;title&gt;</td><td>Defines the title shown on the browser tab.</td></tr>
+                    <tr><td>&lt;body&gt;</td><td>Contains all the visible content of the page.</td></tr>
+                    <tr><td>&lt;p&gt;</td><td>Defines a paragraph of text.</td></tr>
+                    <tr><td>&lt;br&gt;</td><td>Inserts a single line break.</td></tr>
+                    <tr><td>&lt;hr&gt;</td><td>Creates a horizontal line separator.</td></tr>
+                    <tr><td>&lt;img&gt;</td><td>Embeds an image in the web page.</td></tr>
+                    <tr><td>&lt;a&gt;</td><td>Creates a hyperlink to another resource.</td></tr>
+                    <tr><td>&lt;ul&gt;</td><td>Defines an unordered (bulleted) list.</td></tr>
+                    <tr><td>&lt;ol&gt;</td><td>Defines an ordered (numbered) list.</td></tr>
+                    <tr><td>&lt;table&gt;</td><td>Creates a table to organize data.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section">
+            <h2>HTML FORM TAGS</h2>
+            <div class="form-info">
+                <h3>Common Form Elements:</h3>
+                <ul class="custom-list">
+                    <li><code>&lt;form&gt;</code> - The container for user input.</li>
+                    <li><code>&lt;input&gt;</code> - General purpose input control.</li>
+                    <li><code>&lt;select&gt;</code> - A dropdown selection list.</li>
+                    <li><code>&lt;button&gt;</code> - A clickable action button.</li>
+                </ul>
+            </div>
+
+            <form id="reg-form">
+                <fieldset>
+                    <legend>User Registration</legend>
+                    <table id="form-table">
+                        <tr>
+                            <td><label for="name">Full Name</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="John Doe" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email Address</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="email@example.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" id="password" name="password" required></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td class="radio-group">
+                                <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Skills</td>
+                            <td class="checkbox-group">
+                                <input type="checkbox" name="skill" id="html" value="html"> <label for="html">HTML</label>
+                                <input type="checkbox" name="skill" id="css" value="css"> <label for="css">CSS</label>
+                                <input type="checkbox" name="skill" id="js" value="js"> <label for="js">JS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Country</label></td>
+                            <td>
+                                <select id="country" name="country">
+                                    <option value="">--Select--</option>
+                                    <option value="india">India</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uk">UK</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Address</label></td>
+                            <td><textarea id="message" name="message" rows="3"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="btn-container">
+                                <button type="submit" class="btn-primary">Register</button>
+                                <button type="reset" class="btn-secondary">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="video-section">
+            <h3>HTML TUTORIAL VIDEO</h3>
+            <video controls id="vid">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </div>
+
+</body>
+</html>
