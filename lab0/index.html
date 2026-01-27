@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Basic Commands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page">
+
+    <h1 id="main-heading">HTML - HYPERTEXT MARKUP LANGUAGE</h1>
+
+    <hr id="top-line">
+
+    <p id="description">
+        HTML, or <b>HyperText Markup Language</b>, is the standard, foundational language used to create and structure web pages.
+        It acts as the skeleton for all websites, using a system of tags and elements to define content, such as headings,
+        paragraphs, images, and links for web browsers. It is not a programming language, but a markup language that determines
+        how content is organized on a page.
+    </p>
+
+    <hr id="bottom-line">
+
+    <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPim9fWU4lLLwwIBaB7VsQQ_Fk3Ka7uxWHmA&s"
+        alt="HTML Image"
+        id="html-image"
+    >
+
+    <table id="table" border="1"  cellpadding="10" cellspacing="0">
+    <tr>
+        <td><b>TAGS</b></td>
+        <td><b>DESCRIPTION</b></td>
+    </tr>
+    <tr>
+    <td>&lt;head&gt;</td>
+    <td>Contains meta information about the document like title, styles, and scripts.</td>
+</tr>
+
+<tr>
+    <td>&lt;title&gt;</td>
+    <td>Defines the title of the web page shown on the browser tab.</td>
+</tr>
+
+<tr>
+    <td>&lt;body&gt;</td>
+    <td>Contains all the visible content of the web page.</td>
+</tr>
+
+<tr>
+    <td>&lt;p&gt;</td>
+    <td>Defines a paragraph of text.</td>
+</tr>
+
+<tr>
+    <td>&lt;br&gt;</td>
+    <td>Inserts a single line break.</td>
+</tr>
+
+<tr>
+    <td>&lt;hr&gt;</td>
+    <td>Creates a horizontal line to separate content.</td>
+</tr>
+
+<tr>
+    <td>&lt;img&gt;</td>
+    <td>Embeds an image in the web page.</td>
+</tr>
+
+<tr>
+    <td>&lt;a&gt;</td>
+    <td>Creates a hyperlink to another page or resource.</td>
+</tr>
+
+<tr>
+    <td>&lt;ul&gt;</td>
+    <td>Defines an unordered (bulleted) list.</td>
+</tr>
+
+<tr>
+    <td>&lt;ol&gt;</td>
+    <td>Defines an ordered (numbered) list.</td>
+</tr>
+
+<tr>
+    <td>&lt;li&gt;</td>
+    <td>Defines a list item inside ul or ol.</td>
+</tr>
+
+<tr>
+    <td>&lt;table&gt;</td>
+    <td>Creates a table to organize data.</td>
+</tr>
+
+<tr>
+    <td>&lt;tr&gt;</td>
+    <td>Defines a row in a table.</td>
+</tr>
+
+<tr>
+    <td>&lt;td&gt;</td>
+    <td>Defines a data cell in a table.</td>
+</tr>
+
+<tr>
+    <td>&lt;th&gt;</td>
+    <td>Defines a header cell in a table.</td>
+</tr>
+
+</table>
+
+<br>
+<hr>
+<h2>HTML FORM TAGS</h2>
+<h3>List of form tags</h3>
+<ul type = "circle">
+    <li>&lt;form&gt;  - Defines an HTML form for user input</li>
+    <li>&lt;input&gt; - Defines an input control</li>
+    <li>&lt;textarea&gt; - Defines a multiline input control (text area)</li>
+    <li>&lt;button&gt; - Defines a clickable button</li>
+    <li>&lt;select&gt; - Defines a drop-down list</li>
+    <li>&lt;option&gt; - Defines an option in a drop-down list</li>
+</ul>
+<form id="reg-form">
+    <fieldset>
+        <legend>REGISTRATION FORM</legend>
+
+        <table id="form-table">
+            <tr>
+                <td><label for="name">Full Name</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" name="skill" value="html"> HTML
+                    <input type="checkbox" name="skill" value="css"> CSS
+                    <input type="checkbox" name="skill" value="js"> JavaScript
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="">--Select--</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label for="message">Address</label></td>
+                <td>
+                    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<h3>HTML - TUTORIAL VIDEO</h3>
+<video width="600" controls id="vid">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</body>
+</html>

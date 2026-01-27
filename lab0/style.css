@@ -1,0 +1,115 @@
+
+#page {
+    background-color: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#main-heading {
+    text-align: center;
+    color: #2c3e50;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+
+#top-line,
+#bottom-line {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+
+#description {
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+#html-image {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0);
+}
+
+#html-image:hover {
+    
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
+   
+}
+table,th,td
+{
+    border : 3px solid black;
+    border-collapse : collapse;
+    padding : 2px;
+    margin-left:80px;
+}
+
+#reg-form {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 10px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#form-table {
+    width: 100%;
+    border: none;
+}
+
+#form-table td {
+    padding: 6px;
+    border: none;
+}
+
+input, select, textarea {
+    width: 50%;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 4px 8px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a252f;
+}
+
+#vid
+{
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0);
+}
