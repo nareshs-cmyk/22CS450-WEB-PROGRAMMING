@@ -1,6 +1,6 @@
-Travigo
+XTravigo
 
-Travigo is a travel accommodation platform inspired by Airbnb, designed to help users discover, explore, and book unique stays across different destinations. The goal of Travigo is to provide a smooth, user-friendly experience for travelers while enabling hosts to showcase their properties effectively.
+XTravigo is a travel accommodation platform inspired by Airbnb, designed to help users discover, explore, and book unique stays across different destinations. The goal of Travigo is to provide a smooth, user-friendly experience for travelers while enabling hosts to showcase their properties effectively.
 
 ✨ Project Overview
 
