@@ -1,0 +1,37 @@
+.hidden {
+    display: none;
+}
+
+.centerDiv {
+    width: 200px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(93, 97, 93);
+    color: white;
+}
+
+.boldUpper {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#box {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.item {
+    color: rgb(0, 0, 0);
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid black;
+}
