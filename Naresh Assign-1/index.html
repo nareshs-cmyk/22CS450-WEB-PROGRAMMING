@@ -1,74 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Practice</title>
+    <title>Professional Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="form-container">
+    <h2>User Registration</h2>
+
     <form onsubmit="preventSubmit(event)">
 
-        <fieldset>
-            <legend>Form Inputs</legend>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" required>
+        </div>
 
-            <input type="text"     name="username" required>
-            <br><br>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
 
-            <input type="email"    name="email">
-            <br><br>
+        <div class="form-group">
+            <label>Number (1–10)</label>
+            <input type="number" min="1" max="10">
+        </div>
 
-            <input type="number"   min="1" max="10">
-            <br><br>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" checked> Male
+                <input type="radio" name="gender"> Female
+            </div>
+        </div>
 
-            <input type="radio"    name="gender" checked> Male
-            <input type="radio"    name="gender"> Female
-            <br><br>
+        <div class="form-group checkbox-group">
+            <input type="checkbox" required>
+            <span>I Agree to the terms</span>
+        </div>
 
-            <input type="checkbox" required> I Agree
-            <br><br>
-        </fieldset>
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name">
+        </div>
 
-        <br>
+        <button type="button" onclick="showMsg()">Show Alert</button>
+        <button type="button" id="btn" onclick="changeText()">Change Text</button>
 
-        <fieldset>
-            <legend>Actions</legend>
+        <p id="demo"></p>
 
-            <input  type="text"  id="name">
-            <br><br>
+        <progress value="50" max="100"></progress>
 
-            <button type="button" onclick="showMsg()">Show Alert</button>
-            <button type="button" id="btn" onclick="changeText()">Change Text</button>
-            <br><br>
-
-            <p id="demo"></p>
-
-            <progress value="50" max="100"></progress>
-            <br><br>
-
-            <a href="https://example.com" target="_blank">Visit Link</a>
-        </fieldset>
-
-        <br>
-
-        <fieldset>
-            <legend>Styled Elements</legend>
-
-            <div class="centerDiv boldUpper">Hello</div>
-            <br>
-
-            <div id="box">Box</div>
-            <br>
-
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <br>
-
-            <div class="flexCenter">Centered</div>
-
-        </fieldset>
+        <a href="https://example.com" target="_blank">Visit Website</a>
 
     </form>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
