@@ -1,0 +1,39 @@
+/* Centering the container vertically and horizontally using Flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Div 200px wide and ID styling */
+#box {
+    width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Class styling */
+.item {
+    color: red;
+}
+
+/* Bold and Uppercase text */
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Button Hover effect */
+button:hover {
+    background-color: green;
+}
+
+/* Hidden element (could be used for error messages) */
+.hidden {
+    display: none;
+}
