@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming App</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+
+    <h1>Web Programming App</h1>
+
+    <div class="centered-box">
+        Centered Content
+    </div>
+
+    <section>
+        <form id="mainForm">
+            <fieldset>
+                <legend>Personal Info</legend>
+                
+                <p>
+                    <label>Username (Mandatory):</label><br>
+                    <input type="text" id="username" name="username" required>
+                </p>
+
+                <p>
+                    <label>Email (Format Only):</label><br>
+                    <input type="email" name="email">
+                </p>
+
+                <p>
+                    <label>Number (1-10):</label><br>
+                    <input type="number" min="1" max="10">
+                </p>
+
+                <p>
+                    <label>Gender:</label><br>
+                    <input type="radio" name="gender" value="Male" checked> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </p>
+
+                <p>
+                    <input type="checkbox" required> | Agree to Terms
+                </p>
+
+                <button type="submit">Submit Form</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+        <h3>Interactive Elements</h3>
+
+        <p>Test Alert:</p>
+        <button onclick="showMsg()">Click for Alert</button>
+
+        <p>Button Text Changer:</p>
+        <button id="btn" onclick="changeButtonText()">Original Text</button>
+
+        <p>External Link: <a href="https://example.com" target="_blank">Visit Example.com</a></p>
+
+        <p>Progress: <progress value="50" max="100"></progress></p>
+    </section>
+
+    <section>
+        <h3>DOM Manipulation</h3>
+        
+        <div id="box">
+            <p class="bold-caps">Enter Name below (Bold & Uppercase Style):</p>
+            
+            <input type="text" id="name" placeholder="Type name here...">
+            <button onclick="displayInput()">Show Name</button>
+            
+            <p>Output: <span id="demo"></span></p>
+        </div>
+
+        <p class="item">This text is red because it has class="item".</p>
+        
+        <p class="hidden-element">You cannot see this text.</p>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
