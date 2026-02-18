@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JobConnect – Create Profile</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+.container{
+    width:650px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+h2{
+    text-align:center;
+    color:#1e3799;
+}
+.subtitle{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+}
+input[type="radio"]{
+    display:none;
+}
+.step{
+    display:none;
+}
+#step1:checked ~ .step1,
+#step2:checked ~ .step2,
+#step3:checked ~ .step3,
+#step4:checked ~ .step4{
+    display:block;
+}
+label{
+    font-weight:bold;
+}
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin:6px 0 15px;
+}
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+.buttons label, button{
+    background:#1e3799;
+    color:white;
+    padding:10px 20px;
+    cursor:pointer;
+    border:none;
+}
+.buttons label:hover, button:hover{
+    background:#4a69bd;
+}
+.nav{
+    text-align:center;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Create your JobConnect profile</h2>
+<p class="subtitle">It only takes a few minutes to get started 🚀</p>
+
+<form novalidate onsubmit="showSuccess(event)">
+
+
+<!-- RADIO CONTROLS -->
+<input type="radio" name="step" id="step1" checked>
+<input type="radio" name="step" id="step2">
+<input type="radio" name="step" id="step3">
+<input type="radio" name="step" id="step4">
+
+<!-- STEP 1 -->
+<div class="step step1">
+    <h3>👤 About You</h3>
+
+    <label>Full Name</label>
+    <input type="text" name="fullname" required placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" name="email" required placeholder="Enter your email">
+
+    <label>Mobile</label>
+    <input type="tel" name="mobile" pattern="[6-9][0-9]{9}" required placeholder="Mobile number">
+
+    <div class="buttons">
+        <span></span>
+        <label for="step2">Next</label>
+    </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step step2">
+    <h3>🎯 Your Career Path</h3>
+
+    <label>What best describes you?</label>
+    <select name="role" required>
+        <option value="">-- Select --</option>
+        <option>Fresher</option>
+        <option>Internship Seeker</option>
+        <option>Experienced Professional</option>
+    </select>
+
+    <div class="buttons">
+        <label for="step1">Back</label>
+        <label for="step3">Next</label>
+    </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step step3">
+    <h3>🎓 Background</h3>
+
+    <details>
+        <summary><strong>Education Details</strong></summary>
+
+        <label>Qualification</label>
+        <input type="text">
+
+        <label>Course / Branch</label>
+        <input type="text">
+
+        <label>Year of Passing</label>
+        <input type="number">
+    </details>
+
+    <details>
+        <summary><strong>Experience Details</strong></summary>
+
+        <label>Current Company</label>
+        <input type="text">
+
+        <label>Years of Experience</label>
+        <input type="number">
+
+        <label>Previous Role</label>
+        <input type="text">
+    </details>
+    <div class="buttons">
+        <label for="step2">Back</label>
+        <label for="step4">Next</label>
+    </div>
+
+</div>
+<!-- STEP 4 -->
+<div class="step step4">
+    <h3>⭐ Skills & Account</h3>
+
+    <label>Skills</label>
+    <textarea placeholder="html,css,java"></textarea>
+
+    <label>Create Password</label>
+    <input type="password" minlength="6" required>
+
+    <div class="buttons">
+        <label for="step3">Back</label>
+        <button type="submit">Finish Registration</button>
+    </div>
+</div>
+
+</form>
+
+<div class="nav">
+    <a href="home.html">Back to Home</a> |
+    <a href="login.html">Login</a>
+</div>
+</div>
+
+<!-- ✅ DIALOG MUST BE INSIDE BODY -->
+<dialog id="successDialog">
+    <h3>✅ Registration Successful</h3>
+    <p>Your profile has been validated and created successfully.</p>
+    <button onclick="document.getElementById('successDialog').close()">OK</button>
+</dialog>
+
+
+
+</body>
+<script>
+    function showSuccess(event){
+        event.preventDefault();
+    
+        // Check validity of visible inputs only
+        if(document.querySelector('.step4').querySelector('input:invalid')){
+            alert("Please fill all required fields");
+            return;
+        }
+    
+        document.getElementById("successDialog").showModal();
+    }
+    </script>
+    
+</html>
