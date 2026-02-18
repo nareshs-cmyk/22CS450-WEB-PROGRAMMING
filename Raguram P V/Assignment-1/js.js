@@ -6,7 +6,7 @@ setTimeout(() => {
 }, 1500);
 
 function showMsg() {
-    alert("👋 Hello! This is your alert.");
+    alert("Hello! This is your alert.");
 }
 
 function displayInput() {
