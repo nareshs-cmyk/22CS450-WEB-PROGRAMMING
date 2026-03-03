@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MakeMyTrip - Booking Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Flight Booking</h2>
+
+        <form id="bookingForm">
+            <input type="text" id="fromCity" placeholder="From City" required>
+            <input type="text" id="toCity" placeholder="To City" required>
+            <input type="number" id="passengers" placeholder="Passengers" min="1" required>
+            <button type="submit">Book Now</button>
+        </form>
+
+        <h3>Booking History</h3>
+        <ul id="bookingList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

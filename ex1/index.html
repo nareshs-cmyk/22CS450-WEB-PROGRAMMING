@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MakeMyTrip - Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Flight Booking</h2>
+
+        <form id="bookingForm">
+
+            <div class="form-group">
+                <label>From</label>
+                <input type="text" id="fromCity" placeholder="Enter departure city">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>To</label>
+                <input type="text" id="toCity" placeholder="Enter destination city">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Departure Date</label>
+                <input type="date" id="departureDate">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Passengers</label>
+                <input type="number" id="passengers" min="1">
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <small class="error"></small>
+            </div>
+
+            <button type="submit" >Search Flights</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
