@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="box">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <form id="regForm">
+                <label>Username:</label>
+                <input type="text" id="name" name="username" required class="item">
+
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Experience (1-10 years):</label>
+                <input type="number" id="exp" min="1" max="10">
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" checked> Male
+                <input type="radio" name="gender" value="Female"> Female
+
+                <div style="margin: 10px 0;">
+                    <input type="checkbox" id="terms" required> I Agree to terms
+                </div>
+
+                <p>Profile Completion:</p>
+                <progress value="50" max="100"></progress>
+
+                <button type="submit" id="btn" onclick="showMsg()">Register</button>
+            </form>
+        </fieldset>
+
+        <p id="demo">Waiting for input...</p>
+        
+        <a href="https://example.com" target="_blank">View Privacy Policy</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="main-container">
+        
+        <header>
+            <h1>Web Programming App</h1>
+            <p class="subtitle">Modernized Version</p>
+        </header>
+
+        <div class="card centered-box">
+            <span>I am a centered Flexbox div</span>
+        </div>
+
+        <div class="grid-layout">
+            
+            <section class="card form-card">
+                <h2>Personal Info</h2>
+                <form id="mainForm">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating (1-10)</label>
+                        <input type="number" min="1" max="10" placeholder="5">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" required id="terms"> 
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Submit Form</button>
+                </form>
+            </section>
+
+            <section class="card interactive-card">
+                <h2>⚡ Actions</h2>
+
+                <div class="action-item">
+                    <p>Trigger Alert:</p>
+                    <button onclick="showMsg()" class="outline-btn">Show Alert</button>
+                </div>
+
+                <div class="action-item">
+                    <p>Dynamic Button:</p>
+                    <button id="btn" onclick="changeButtonText()" class="outline-btn">Original Text</button>
+                </div>
+
+                <div class="action-item">
+                    <p>External Link:</p>
+                    <a href="https://example.com" target="_blank" class="link-btn">Visit Example.com &rarr;</a>
+                </div>
+
+                <div class="action-item">
+                    <p>Loading Status:</p>
+                    <progress value="50" max="100"></progress>
+                </div>
+            </section>
+        </div>
+
+        <section class="card dom-card">
+            <h2>DOM Manipulation</h2>
+            
+            <div id="box">
+                <p class="bold-caps">Enter Name (Result is Bold & Uppercase):</p>
+                
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Type name here...">
+                    <button onclick="displayInput()" class="secondary-btn">Show Name</button>
+                </div>
+                
+                <p class="result-text">Output: <span id="demo">Waiting...</span></p>
+            </div>
+
+            <p class="item">This text has class="item" (Styled Red)</p>
+            
+            <p class="hidden-element">You cannot see this.</p>
+        </section>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
